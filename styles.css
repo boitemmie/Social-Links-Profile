@@ -1,0 +1,94 @@
+:root {
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey-1: hsl(0, 0%, 20%);
+    --Grey-2: hsl(0, 0%, 12%);
+    --Grey-3: hsl(0, 0%, 8%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    width: 100%;
+    max-width: 1440px;
+    min-height: 100vh;
+    background-color: var(--Grey-3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-family: Inter, sans-serif;
+}
+
+main {
+    background-color: var(--Grey-2);
+    padding: 1.5em;
+    border-radius: 10px;
+    text-align: center;
+     width: 100%;
+     max-width: 300px;
+
+}
+
+.display-profile img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+
+.paragraphs {
+    margin: .80em 0;
+}
+
+.profile-name {
+    font-size: 1.2rem;
+    color: var(--White);
+    font-weight: 800;
+}
+
+.profile-location {
+    color: var(--Green);
+    font-size: .80rem;
+    margin: .25em 0;
+}
+
+.bio {
+    margin: 1em 0;
+    font-size: .80rem;
+    color: var(--White);
+}
+
+.accounts {
+    width: 100%;
+    background-color: var(--Grey-1);
+    margin: 1em 0;
+    padding: .80em;
+    border-radius: 5px;
+    color: var(--White);
+    font-size: 0.80rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.accounts:hover {
+    background-color: var(--Green);
+    color: black;
+     transform: translateY(-2px);
+
+}
+
+.accounts:focus-visible {
+  outline: 2px solid var(--Green);
+  outline-offset: 2px;
+}
+
+
+.accounts:last-child {
+    margin-bottom: 0;
+}
