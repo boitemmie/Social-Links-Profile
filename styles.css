@@ -38,7 +38,7 @@ main {
 .display-profile img {
     border-radius: 50%;
     width: 80px;
-    height: 80px;
+    height: 85px;
 }
 
 .paragraphs {
@@ -63,32 +63,58 @@ main {
     color: var(--White);
 }
 
-.accounts {
+main a {
+    text-decoration: none;
+}
+
+.social-links {
     width: 100%;
+    list-style: none;
+}
+
+.social-links li {
     background-color: var(--Grey-1);
-    margin: 1em 0;
+    margin-bottom: .80em;
     padding: .80em;
     border-radius: 5px;
     color: var(--White);
+    transition: background-color 0.3s ease, 
+                color 0.3s ease, 
+                transform 0.2s;
+}
+
+.social-links li:last-child {
+    margin-bottom: 0;
+}
+
+.social-links a {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
     font-size: 0.80rem;
     font-weight: 700;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+    color: inherit;
 }
 
-.accounts:hover {
+
+.social-links img {
+    width: 16px;
+}
+
+
+.social-links li:hover {
     background-color: var(--Green);
     color: black;
-     transform: translateY(-2px);
+     transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
 
 }
 
-.accounts:focus-visible {
+.social-links li:focus-within {
   outline: 2px solid var(--Green);
   outline-offset: 2px;
 }
 
-
-.accounts:last-child {
-    margin-bottom: 0;
-}
